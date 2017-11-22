@@ -14,3 +14,16 @@
      </script>
  ```
 ####  使用注意：使用dealImage返回值要在页面加载完成之后。
+## 2. new Date().format('yyyy-MM-dd hh:mm:ss q:S') 格式化时间输出
+##### format里可使用自定义分隔符，如format('yyyy年MM月dd hh:mm:ss q:S')
+##### 参数y代表年，M代表月，d代表日，h代表小时，m代表分钟，s代表秒，q代表季度，S代表毫秒。四个yyyy为年全称，如2017，两个yy为17。不需要的参数可不写。
+##### 使用例子：
+```
+	<script type="text/javascript" src="js/lezhi.js" ></script>
+     	<script>
+		window.onload=function(){
+			var time=new Date().format('yy-MM-dd hh:mm:ss');
+			console.log(time);
+		}
+	</script>
+```
